@@ -24,7 +24,7 @@ tt2 = np.array(img2)
 
 
 
-result = DeepFace.verify(tt,tt2)
+result = DeepFace.verify(tt,tt2,detector_backend='dlib', model_name = 'Dlib')
 
 print(result)
 print(result["distance"])
